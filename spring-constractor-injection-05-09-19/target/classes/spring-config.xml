@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans-3.2.xsd">
+	
+	<!-- <bean id="person" class="com.sakii209.spring_constractor_injection_05_09_19.Person"> 
+			<constructor-arg value="saikiran" /> 
+			<constructor-arg value="209" /> 
+			<constructor-arg value="20000" />
+		 </bean> -->
+
+	<!-- <bean id="person" class="com.sakii209.spring_constractor_injection_05_09_19.Person"> 
+			<constructor-arg value="209" name="pid" /> 
+			<constructor-arg value="saikiran" name="name"/> 
+			<constructor-arg value="20000" name="salary"/> 
+		</bean> -->
+	
+	<bean id="person"
+		class="com.sakii209.spring_constractor_injection_05_09_19.Person">
+		<constructor-arg value="209" index="1" />
+		<constructor-arg value="saikiran" index="0" />
+		<constructor-arg value="20000" index="2" />
+	</bean>
+
+</beans>

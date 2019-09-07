@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans-3.2.xsd">
+
+	<bean id="address"
+		class="com.sakii209.spring_insidebean_configuring_bothconstractor_and_properties_05_09_19.Address">
+		<property name="city" value="hyd" />
+		<property name="state" value="TS" />
+		<property name="street" value="Bulkempet" />
+	</bean>
+
+	<bean
+		class="com.sakii209.spring_insidebean_configuring_bothconstractor_and_properties_05_09_19.Person">
+		<property name="name" value="kiran" />
+		<property name="pid" value="209" />
+		<constructor-arg value="20000" />
+		<constructor-arg ref="address" />
+	</bean>
+
+</beans>

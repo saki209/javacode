@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans-4.2.xsd">
+
+	<description>
+		latest spring uses description tag to give more information
+	</description>
+	<!-- <alias name="person" alias="kiran"/> <bean id="person" class="com.sakii209.spring_30_08_19.Person"> 
+		<property name="name" value="saikiran" /> <property name="pid" value="209" 
+		/> </bean> -->
+
+	<bean name="sai,kiran" class="com.sakii209.spring_30_08_19.Person">
+		<property name="name" value="saikiran" />
+		<property name="pid" value="209" />
+	</bean>
+	<import resource="spring-beans.xml" />
+</beans>
