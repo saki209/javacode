@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
+
+	<bean class="com.sakii209.spring_DataBinding_06_09_16.Student">
+		<property name="name" value="saikiran" />
+		<property name="sid" value="209" />
+		<property name="courses">
+			<array>
+				<value>core java</value>
+				<value>adv.java</value>
+				<value>spring</value>
+				<value>JPA</value>
+			</array>
+		</property>
+	</bean>
+
+	<bean class="com.sakii209.spring_DataBinding_06_09_16.Person">
+		<constructor-arg name="names">
+			<list>
+				<value>sai</value>
+				<value>kiran</value>
+				<value>vamsi</value>
+				<value>nani</value>
+			</list>
+		</constructor-arg>
+	</bean>
+
+</beans>
