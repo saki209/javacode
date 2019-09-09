@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
+
+	<bean class="com.saki209.spring_InnerBean_09_09_19.Person">
+		<property name="name" value="saikrian" />
+		<property name="pid" value="209" />
+		<property name="address">
+			<bean class="com.saki209.spring_InnerBean_09_09_19.Address">
+				<property name="street" value="Bulkempet" />
+				<property name="city" value="hyderabad" />
+				<property name="state" value="Telengana" />
+			</bean>
+		</property>
+
+	</bean>
+
+</beans>

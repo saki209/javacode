@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
+
+<bean id="parents" class="com.saki209.spring_Bean_Inheritance_09_09_19.Student" abstract="true">
+<property name="motherName" value="sita"/>
+<property name="fatherName" value="rama" />
+</bean>
+
+ <bean id="lava" class="com.saki209.spring_Bean_Inheritance_09_09_19.Student" parent="parents">
+ <property name="name" value="lava" />
+ <property name="sid" value="10" />
+ </bean>
+ 
+  <bean id="kusa" class="com.saki209.spring_Bean_Inheritance_09_09_19.Student" parent="parents">
+ <property name="name" value="kusa" />
+ <property name="sid" value="20" />
+ </bean>
+
+</beans>

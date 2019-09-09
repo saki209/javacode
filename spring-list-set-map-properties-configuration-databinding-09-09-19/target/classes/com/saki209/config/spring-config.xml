@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
+
+<!-- below code is used to configure the list data type -->
+	<bean class="com.saki209.PersonWithListDataType">
+		<property name="names">
+			<list>
+				<value>sai</value>
+				<value>kiran</value>
+				<value>vamsi</value>
+				<value>nani</value>
+			</list>
+		</property>
+	</bean>
+
+<!-- below code is used to configure the set datatype -->
+	<bean class="com.saki209.PersonWithSetDataType">
+		<property name="names">
+			<set>
+				<value>sai</value>
+				<value>kiran</value>
+				<value>vamsi</value>
+				<value>nani</value>
+			</set>
+		</property>
+	</bean>
+
+<!-- below code is used to configure the map datatype -->
+	<bean class="com.saki209.PersonWithMapDataType">
+		<property name="empDatails">
+			<map>
+				<entry key="sai" value="10000" />
+				<entry key="kiran" value="20000" />
+				<entry key="vamsi" value="30000" />
+			</map>
+		</property>
+	</bean>
+
+<!-- below code is used to configure the properties -->
+	<bean class="com.saki209.PersonWithProperties">
+		<property name="data">
+			<props>
+				<prop key="uname">saikiran</prop>
+				<prop key="uid">209</prop>
+				<prop key="domain">java</prop>
+			</props>
+		</property>
+
+	</bean>
+
+</beans>
