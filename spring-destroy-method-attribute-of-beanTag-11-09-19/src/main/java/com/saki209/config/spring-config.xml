@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans-2.0.xsd">
+		<bean class="com.saki209.spring_destroy_method_attribute_of_beanTag_11_09_19.Person" destroy-method="destroy">
+			<property name="name" value="saikiran"/>
+			<property name="pid" value="209" />
+		</bean>
+</beans>
