@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
+	
+	
+	<bean class="com.saki209.Beans.BeanPostProcesserFactory" />
+
+	<bean class="com.saki209.Beans.Person">
+		<constructor-arg name="name" value="saikiran" />
+		<constructor-arg name="pid" value="209" />
+	</bean>
+	<bean class="com.saki209.Beans.Address">
+		<constructor-arg name="city" value="hyd" />
+		<constructor-arg name="street" value="ameerpet" />
+	</bean>
+	
+</beans>

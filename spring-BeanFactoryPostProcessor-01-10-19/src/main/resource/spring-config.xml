@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
+
+	<bean class="com.saki209.beans.Person">
+		<property name="name" value="${person.name}" />
+		<property name="pid" value="${person.pid}" />
+	</bean>
+	<bean class="com.saki209.beans.Address">
+		<property name="city" value="${address.city}" />
+		<property name="street" value="${address.street}" />
+	</bean>
+<bean class="com.saki209.beans.BeanFactoryPPImpl"/>
+</beans>
