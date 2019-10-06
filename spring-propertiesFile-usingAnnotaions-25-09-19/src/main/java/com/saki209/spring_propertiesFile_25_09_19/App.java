@@ -15,9 +15,11 @@ public class App
     	String url = container.getMessage("db.url", null, null);
     	String username = container.getMessage("db.username", null, null);
     	String password = container.getMessage("db.password",null,null);
+    	String name = container.getMessage("name", new String[] {"saikiran gorantla"},null);
     	System.out.println(url);
     	System.out.println(username);
     	System.out.println(password);
+    	System.out.println(name);
     	AnnotationConfigApplicationContext.class.cast(container).close();
 }  
     
